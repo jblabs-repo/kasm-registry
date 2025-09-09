@@ -1,0 +1,27 @@
+{
+  "description": "Lightweight PDF viewer.",
+  "docker_registry": "https://index.docker.io/v1/",
+  "image_src": "sumatrapdf.png",
+  "run_config": {
+    "hostname": "kasm"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": ["Productivity"],
+  "friendly_name": "Sumatra PDF",
+  "architecture": ["amd64"],
+  "compatibility": [
+    {
+      "version": "1.17.x",
+      "image": "jakerbusse/kasm-sumatrapdf:1",
+      "uncompressed_size_mb": 2170,
+      "available_tags": ["1"]
+    }
+  ]
+}
