@@ -19,7 +19,7 @@ export default function Header({ searchText, changeSearch }) {
   const getLink = (path) => `${router.basePath}${path}`;
 
   return (
-    <header className="relative font-light overflow-hidden bg-gradient-to-tr from-[#162d48] to-[#2980b9] p-8 xl:px-32 text-white gap-5 md:gap-0 flex flex-wrap justify-center items-center">
+    <header className="relative font-light overflow-hidden bg-gradient-to-tr from-[#00679E] to-[#00697E] p-8 xl:px-32 text-white gap-5 md:gap-0 flex flex-wrap justify-center items-center">
       <Bubbles />
       <div className='relative z-10'>
         <div className="text-3xl">{process.env.name}</div>
